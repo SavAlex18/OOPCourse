@@ -18,12 +18,3 @@ class Category:
     def add_products(self, products: Product):
         self.products.append(products)
         # Category.product_count += 1
-
-
-if __name__ == "__main__":
-    cat1 = Category("tv", "tv", [])
-    product1 = Product("Gadget", "Good Gadget", 5, 1)
-    cat1.add_products(product1)
-    print(cat1.name)
-    print(cat1.description)
-    print(cat1.products)
