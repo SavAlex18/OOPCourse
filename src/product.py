@@ -3,14 +3,14 @@ class Product:
     name: str
     description: str
     price: float
-    quantity = 0
+    quantity: int
 
 
-    def __init__(self, name: str, description: str, price: float) -> None:
+    def __init__(self, name: str, description: str, price: float, quantity) -> None:
         self.name = name
         self.description = description
         self.price = price
-        Product.quantity += 1
+        self.quantity = quantity
 
 
 if __name__ == "__main__":

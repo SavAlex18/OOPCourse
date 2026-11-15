@@ -7,19 +7,17 @@ class Category:
     category_count = 0
     product_count = 0
 
-    def __init__(self, name: str, description: str):
+
+    def __init__(self, name: str, description: str, products: list):
         self.name = name
         self.description = description
         self.products = []
         Category.category_count += 1
 
+
     def add_products(self, products: Product):
         self.products.append(products)
         Category.product_count += 1
-
-
-
-
 
 
 if __name__ == "__main__":
