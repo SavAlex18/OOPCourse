@@ -25,7 +25,7 @@ def test_add_product(first_category, second_product):
     assert Category.product_count == 1  # Общее количество товаров во всех категориях
 
     # 2. Добавляем новый продукт
-    first_category.add_products(second_product)
+    first_category.add_product(second_product)
 
     # 3. Проверяем, что продукт добавился в список конкретной категории
     assert len(first_category.products) == 2
