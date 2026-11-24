@@ -22,11 +22,15 @@ class Category:
 
     @property
     def products(self):
-        return self.__products
-
-    @property
-    def get_products_str(self):
         product_str = ""
         for product in self.__products:
             product_str += f"{product.name}, {product.price} руб. Остаток: {product.quantity} шт.\n"
         return product_str
+
+
+    # @property
+    # def get_products_str(self):
+    #     product_str = ""
+    #     for product in self.__products:
+    #         product_str += f"{product.name}, {product.price} руб. Остаток: {product.quantity} шт.\n"
+    #     return product_str
